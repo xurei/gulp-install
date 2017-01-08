@@ -39,6 +39,9 @@ module.exports = exports = function install(opts) {
         if (opts && opts.production) {
           cmd.args.push('--production');
         }
+        if (opts && opts.silent) {
+          cmd.args.push('--silent');
+        }
         if (opts && opts.ignoreScripts) {
           cmd.args.push('--ignore-scripts');
         }
